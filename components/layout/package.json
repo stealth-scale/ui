@@ -1,0 +1,33 @@
+{
+  "name": "@stealthscale/component-layout",
+  "version": "0.0.0",
+  "description": "Arranges what is already there: the boxes, the stacks, the rules between them and the surfaces they sit on.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stealth-scale/ui.git",
+    "directory": "components/layout"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "imports": {
+    "#*": "./src/*"
+  },
+  "exports": {
+    ".": {
+      "ui-source": "./src/index.ts",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": "./dist/index.mjs",
+      "./package.json": "./package.json"
+    },
+    "access": "public"
+  }
+}

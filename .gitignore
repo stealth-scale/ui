@@ -1,0 +1,19 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+storybook-static/
+
+# A package's tsconfig includes only src, so a declaration build never reaches a config.
+# The pattern keeps the artefact out of a commit if one ever does.
+*.config.d.ts
+
+# Written by `vp config`, which `prepare` runs on install
+.vite-hooks/
+
+# Session scratch: plans, briefs, reports
+.scratch/
+
+.env
+.env.*
+!.env.example

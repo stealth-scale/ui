@@ -1,0 +1,14 @@
+# Calls the toolchain's reusable task, so this repository runs the same gates as every other
+# one. Chromium is installed because the stories run in a browser.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    uses: stealth-scale/tooling/.github/workflows/ci.yml@main
+    with:
+      browsers: true

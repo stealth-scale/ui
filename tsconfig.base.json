@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "_comment": "What every package in this repository compiles under: the toolchain's React base, plus this repository's own source condition, so the type checker reads a workspace package's source exactly as the bundler does. Every package here renders, so the base is the React one rather than the plain base tooling itself extends.",
+  "extends": "@stealthscale/tool-config/tsconfig/react.json",
+  "compilerOptions": {
+    "customConditions": ["ui-source"]
+  }
+}
